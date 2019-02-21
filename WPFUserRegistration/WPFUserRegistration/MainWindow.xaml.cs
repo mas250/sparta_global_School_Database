@@ -30,22 +30,22 @@ namespace WPFUserRegistration
             kc = new User();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string item = nameField.Text;
-            WritetoFile(item);
+        ////private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        ////{
+        ////    string item = nameField.Text;
+        ////    WritetoFile(item);
 
-        }
+        ////}
 
-        public void WritetoFile(string item)
-        {
-            string path = "user.txt";
+        //public void WritetoFile(string item)
+        //{
+        //    string path = "user.txt";
 
-            using (StreamWriter sw = File.AppendText(path))
-            {
-                sw.WriteLine(item);
-            }
-        }
+        //    using (StreamWriter sw = File.AppendText(path))
+        //    {
+        //        sw.WriteLine(item);
+        //    }
+        //}
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -112,7 +112,17 @@ namespace WPFUserRegistration
             {
                 kc.AgeRange = "18+";
             }
-            kc.saveData();
+            if (nameField.Text != "" && passwordField.Password != "" && imageField.Source.ToString() != "" && numberField.Text != "")
+            {
+                
+                kc.saveData();
+                MessageBox.Show("Entry Added");
+            }
+            else
+            {
+                MessageBox.Show("Please enter more data");
+            }
+            
         }
 
         private void ViewProfile(object sender, RoutedEventArgs e)

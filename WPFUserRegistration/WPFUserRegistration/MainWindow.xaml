@@ -21,7 +21,7 @@
         <Image Name ="imageField" HorizontalAlignment="Left" Height="85" Margin="221,248,0,0" VerticalAlignment="Top" Width="168"/>
         <Label Content="Photo" HorizontalAlignment="Left" Margin="69,272,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Number" HorizontalAlignment="Left" Margin="69,347,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox Name="numberField" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="221,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged"/>
+        <TextBox Name="numberField" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="221,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" />
         <CheckBox Name ="checkbox_0" Content="Walks" HorizontalAlignment="Left" Margin="535,29,0,0" VerticalAlignment="Top"/>
         <CheckBox Name ="checkbox_1" Content="Drives" HorizontalAlignment="Left" Margin="535,58,0,0" VerticalAlignment="Top"/>
         <CheckBox Name ="checkbox_2" Content="Cycles" HorizontalAlignment="Left" Margin="535,86,0,0" VerticalAlignment="Top"/>

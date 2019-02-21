@@ -54,7 +54,7 @@ namespace WPFUserRegistration
 
             using (StreamWriter sw = File.AppendText("UserData.csv"))
             {
-                sw.WriteLine(name + ":" + password + ":" + age + ":" + sex +":" + phoneNumber + ":" + picturePath + ":" + ageRange + ":" + transportation);
+                sw.WriteLine(name + ":" + password + ":" + age + ":" + sex +":" + phoneNumber + ":" + picturePath + ":" + ageRange + ":" + eachItem);
                 
 
 
