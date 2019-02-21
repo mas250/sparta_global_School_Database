@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFUserRegistration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUserRegistration"
+        mc:Ignorable="d"
+        Title="User Registration" Height="698.12" Width="893.6">
+    <Grid>
+        <Label Content="UserName" HorizontalAlignment="Left" Margin="69,28,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox Name ="nameField" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="221,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="69,77,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <PasswordBox Name ="passwordField" HorizontalAlignment="Left" Margin="221,86,0,0" VerticalAlignment="Top" Width="186"/>
+        <Label Content="D.O.B." HorizontalAlignment="Left" Margin="69,131,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox Name ="sexBox"  HorizontalAlignment="Left" Margin="228,195,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem>Male</ComboBoxItem>
+            <ComboBoxItem>Female</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Sex" HorizontalAlignment="Left" Margin="69,184,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="452,296,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image Name ="imageField" HorizontalAlignment="Left" Height="85" Margin="221,248,0,0" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Photo" HorizontalAlignment="Left" Margin="69,272,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Number" HorizontalAlignment="Left" Margin="69,347,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox Name="numberField" FontSize="18" HorizontalAlignment="Left" Height="34" Margin="221,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" TextChanged="TextBox_TextChanged"/>
+        <CheckBox Name ="checkbox_0" Content="Walks" HorizontalAlignment="Left" Margin="535,29,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name ="checkbox_1" Content="Drives" HorizontalAlignment="Left" Margin="535,58,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name ="checkbox_2" Content="Cycles" HorizontalAlignment="Left" Margin="535,86,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="radio_0" Content="18-" HorizontalAlignment="Left" Margin="552,183,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
+        <RadioButton Name="radio_1" Content="18+" HorizontalAlignment="Left" Margin="552,205,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2"/>
+        <Button Name="regButton" Content="Register" FontSize="18" HorizontalAlignment="Left" Margin="69,441,0,0" VerticalAlignment="Top" Width="133" Height="63" Click="registerUser"/>
+        <Button Name="viewProfileButton" Content="View Profile" FontSize="18" HorizontalAlignment="Left" Margin="663,441,0,0" VerticalAlignment="Top" Width="133" Height="63" Click="ViewProfile"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="71,306,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DatePicker Name ="ageField" HorizontalAlignment="Left" Margin="228,131,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.186,2.94" Height="34" Width="186"/>
+
+    </Grid>
+</Window>
