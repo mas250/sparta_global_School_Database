@@ -112,7 +112,7 @@ namespace WPFUserRegistration
             {
                 kc.AgeRange = "18+";
             }
-            if (nameField.Text != "" && passwordField.Password != "" && imageField.Source.ToString() != "" && numberField.Text != "")
+            if (kc.Name != "" && kc.Password != "" && kc.Age != 0 && kc.PhoneNumber != "" && kc.PicturePath != "")
             {
                 
                 kc.saveData();

@@ -26,11 +26,7 @@ namespace WPFUserRegistration
         public string PicturePath { get => picturePath; set => picturePath = value; }
         public string AgeRange { get => ageRange; set => ageRange = value; }
         public string[] Transportation { get => transportation; set => transportation = value; }
-        public User()
-        {
-
-
-        }
+        public User() {}
         public User(string n, string p, int a, string s, string pn, string pix, string ar, string[] t)
         {
             name = n;
@@ -49,14 +45,11 @@ namespace WPFUserRegistration
             foreach (var item in transportation)
             {
                 eachItem += "_" + item;
-
             }
 
             using (StreamWriter sw = File.AppendText("UserData.csv"))
             {
                 sw.WriteLine(name + ":" + password + ":" + age + ":" + sex +":" + phoneNumber + ":" + picturePath + ":" + ageRange + ":" + eachItem);
-                
-
 
             }
         }
