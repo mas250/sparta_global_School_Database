@@ -43,3 +43,5 @@ C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database
 C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database\WPFUserRegistration\WPFUserRegistration\obj\Debug\WPFUserRegistration.Properties.Resources.resources
 C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database\WPFUserRegistration\WPFUserRegistration\obj\Debug\WPFUserRegistration.csproj.GenerateResource.cache
 C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database\WPFUserRegistration\WPFUserRegistration\obj\Debug\WPFUserRegistration.csproj.CoreCompileInputs.cache
+C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database\WPFUserRegistration\WPFUserRegistration\obj\Debug\UserControl1.g.cs
+C:\Users\tech-w100a\Desktop\Engineering26\week6\HW\sparta_global_School_Database\WPFUserRegistration\WPFUserRegistration\obj\Debug\UserControl1.baml

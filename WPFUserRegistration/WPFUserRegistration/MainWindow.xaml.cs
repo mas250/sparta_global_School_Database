@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using Microsoft.VisualBasic;
+using System.Xml;
 
 
 namespace WPFUserRegistration
@@ -30,22 +32,7 @@ namespace WPFUserRegistration
             kc = new User();
         }
 
-        ////private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        ////{
-        ////    string item = nameField.Text;
-        ////    WritetoFile(item);
-
-        ////}
-
-        //public void WritetoFile(string item)
-        //{
-        //    string path = "user.txt";
-
-        //    using (StreamWriter sw = File.AppendText(path))
-        //    {
-        //        sw.WriteLine(item);
-        //    }
-        //}
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -116,6 +103,7 @@ namespace WPFUserRegistration
             {
                 
                 kc.saveData();
+                kc.saveDataXML();
                 MessageBox.Show("Entry Added");
             }
             else
@@ -127,14 +115,31 @@ namespace WPFUserRegistration
 
         private void ViewProfile(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult mbr = MessageBox.Show("Enter a Username");
-            string userName = mbr.ToString();
-            MessageBox.Show(userName);
-            //User mc = new User();
-            string[] sr = File.ReadAllLines("SchholDB.csv");
-            string[] str = sr[0].Split(',');
-            nameField.Text = str[0]; 
+          
 
+
+            string searchedUser = Interaction.InputBox("please input username", "Username Search", "");
+            string[] sr = File.ReadAllLines("UserData.csv");
+           // MessageBox.Show(searchedUser);
+            for (int i = 0; i < sr.Length; i++)
+            {
+                string[] str = sr[i].Split(',');
+                if (searchedUser == str [0])
+                {
+                    //returns the line for the given username
+                    //eg name.Text =str[0];
+                    //password.Text = str[1];
+
+                    nameField.Text = str[0];
+                    passwordField.Password = str[1];
+                    if (str[7] == "Walks")
+                    {
+                        checkbox_0.IsChecked = true;
+                    }
+                }
+            }
+            //string[] str = sr[0].Split(',');
+            //nameField.Text = str[0];
         }
     }
 }

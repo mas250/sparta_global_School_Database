@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<allUsers>
+  <user>
+    <name age ="">
+      Snake
+    </name>
+    <password>
+      Fox
+    </password>
+    <Age>
+      99
+    </Age>
+    <sex>
+      Clone
+    </sex>
+    <phoneNumber>
+      140.85
+    </phoneNumber>
+    <imagePath>
+      C:\Users\tech-w100a\Desktop
+    </imagePath>
+    <ageRange>
+      <u18></u18>
+      <o18></o18>
+    </ageRange>
+    <transportation>
+      <Walks></Walks>
+      <drives></drives>
+      <cycles></cycles>
+    </transportation>
+    
+  </user>
+</allUsers>
